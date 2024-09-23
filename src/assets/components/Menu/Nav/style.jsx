@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  
-    
     nav{
         display:flex; 
         position:relative;
@@ -22,5 +20,10 @@ export const Nav = styled.nav`
         color:white;
         text-decoration:none;
     }
-
+    a:hover{
+        display:flex;
+        color: #c2c0c0;
+        transition:0.5s;
+        transform:scale(1.2)
+    }
 `;

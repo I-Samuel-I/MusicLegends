@@ -1,14 +1,13 @@
 import styled from "styled-components";
 export const Avatar = styled.div `
     display:flex;
-    justify-content:center;
+    align-items:center;
     position:relative;
     height:100px;
     bottom:200px;
     width:20%;
     margin-left:auto;
-   
-    
+
     p{
         font-family: "DM Sans", sans-serif;
         font-weight: 500;
@@ -17,9 +16,13 @@ export const Avatar = styled.div `
         padding-right:15px;
         color:white; 
     }
-    img{
+    p:hover{
         display:flex;
-        justify-content:center;
+        color: #c2c0c0;
+        transition:0.5s;
+        transform:scale(1.2)
+    }
+    img{
         border-radius:100px;
         width:48px;
         height:48px;
