@@ -26,4 +26,20 @@ export const Nav = styled.nav`
         transition:0.5s;
         transform:scale(1.2)
     }
+
+    @media (767px < width <= 991px) {
+        ul{
+            display:none;
+        }
+}
+    @media (600px < width <= 767px) {
+        ul{
+            display:none;
+        }
+}
+    @media (width <= 600px) {
+        ul{
+            display:none;
+        }
+    }
 `;

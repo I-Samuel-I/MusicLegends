@@ -1,21 +1,27 @@
 import styled from "styled-components";
-import bgImage from "../../images/Walpaper.png"
-export const BgImage  = styled.section `
-    color:white;
-    height:620px;
-    width:100%;
-    background-image: url(${bgImage});
-    background-size: cover; 
-    background-position: center -70px;
-    background-repeat: no-repeat;
-    position:relative;
-    z-index: 1;   
-`;
+
 export const Display = styled.article`
+    color:white;
     width:50%;
-    height:auto; 
     margin-left:130px;
     transform:scale(0.9); 
+
+    @media (767px < width <= 991px) {
+    
+    width:100%;
+    margin-left:-40px;
+    transform:scale(0.8);
+}
+    @media (600px < width <= 767px) {
+        width:100%;
+        margin-left:0px;
+        transform:scale(0.8);
+}  
+    @media (width <= 600px) {
+        width:100%;
+        margin-left:0px;
+        transform:scale(0.8);
+}
 `;
 export const Logo = styled.div`
     img{
@@ -30,16 +36,18 @@ export const Logo = styled.div`
 export const Details = styled.section`
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:15px;
     margin-top:20px;
     img{
-        width:45 qpx;
+        width:40px;
     }
     p{
-        font-size:1.3em;
+        font-size:1.5em;
     }
 `;
 
 export const ImageInverse = styled.div`
     transform: scale(-1)
+
+    
 `;

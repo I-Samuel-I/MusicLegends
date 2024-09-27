@@ -3,7 +3,7 @@ import * as Icons from "../img/index"
 export default function Display (){
     return (
         <>
-            <S.BgImage>   
+            
                 <S.Display>
                     <S.Logo>
                         <img src={Icons.Logo} alt="Logo-Image"/>
@@ -20,7 +20,7 @@ export default function Display (){
                 </S.Display>
                
                 
-            </S.BgImage>
+           
         </> 
     )
 }
