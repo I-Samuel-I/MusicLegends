@@ -38,7 +38,6 @@ export const Favorite = styled.div`
         display:none;
 }
 `;
-
 export const Controls = styled.div`
     width:100%;
     display:flex;
@@ -95,6 +94,10 @@ export const Play = styled.div `
     height:40px;
     background-color: #191919;
     border: solid 1px #1E1E1E; 
+    &:hover{
+        transform: scale(1.1);
+    }
+
     img{
         width:25px;
         margin-left:0px;
@@ -119,5 +122,43 @@ export const Extra = styled.div `
     }
     @media (width <= 600px) {
         display:none;
+    }
+`;
+
+
+export const GlobalToolTip = styled.div` 
+    position: relative;
+    display: flex;
+    
+    img:hover{
+        transform:scale(1.1)
+    }
+    
+`;
+export const ToolTip = styled.div`
+    position: absolute;
+    bottom: 50px;
+    left:50%;
+    transform: translateX(-45%);
+    background-color: #2e2d2d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    
+    
+   
+`;
+export const PrevWrapper = styled.div `
+    position: relative;
+    display: flex;
+    transform:scale(-1);
+    img{
+        transform: scale(-1);
+    }
+    img:hover{
+        transform:scale(1.1)
+        
     }
 `;

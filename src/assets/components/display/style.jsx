@@ -41,13 +41,14 @@ export const Details = styled.section`
     img{
         width:40px;
     }
+    img:hover{
+        cursor: pointer;
+    }
     p{
         font-size:1.5em;
     }
 `;
 
 export const ImageInverse = styled.div`
-    transform: scale(-1)
-
-    
+    transform: scale(-1);    
 `;

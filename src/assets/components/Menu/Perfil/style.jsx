@@ -10,7 +10,7 @@ export const Avatar = styled.div `
 
     p{
         font-family: "DM Sans", sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         display:flex;
         align-items:center;
         padding-right:15px;
@@ -27,6 +27,10 @@ export const Avatar = styled.div `
         border-radius:100px;
         width:48px;
         height:48px;
+    }
+    img:hover{
+        transform:scale(1.2);
+        transition: 0.5s;
     }
 
     @media (767px < width <= 991px) {
