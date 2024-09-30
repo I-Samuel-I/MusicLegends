@@ -20,13 +20,16 @@ export const Title = styled.div`
         display:flex;
         justify-content:start;
         width:70%;
-        border:solid 1px white;
+        
 }
     @media (width <= 600px) {
         display:flex;
         justify-content:start;
         width:70%;
-        border:solid 1px white;
+        
+        h1{
+            font-size:1.5em;
+        }
       
 }
 `;

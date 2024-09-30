@@ -35,7 +35,7 @@ export const Avatar = styled.div `
 
     @media (767px < width <= 991px) {
         p{
-            display:none;
+            
         }
 }
     @media (600px < width <= 767px) {
@@ -46,6 +46,13 @@ export const Avatar = styled.div `
     @media (width <= 600px) {
         p{
             display:none;
+        }
+        img{
+            position:relative;
+            left:20px;
+            width:40px;
+            height:40px;
+            
         }
 }
 `;

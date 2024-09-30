@@ -28,16 +28,25 @@ export const Nav = styled.nav`
     }
 
     @media (767px < width <= 991px) {
+        nav{
+            display:none;
+        }
         ul{
             display:none;
         }
 }
     @media (600px < width <= 767px) {
+        nav{
+            display:none;
+        }
         ul{
             display:none;
         }
 }
     @media (width <= 600px) {
+        nav{
+            display:none;
+        }
         ul{
             display:none;
         }

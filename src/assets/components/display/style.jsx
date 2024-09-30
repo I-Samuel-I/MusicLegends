@@ -7,15 +7,19 @@ export const Display = styled.article`
     transform:scale(0.9); 
 
     @media (767px < width <= 991px) {
-    
+    position:relative;
     width:100%;
     margin-left:-40px;
     transform:scale(0.8);
+    bottom:50px;
+
 }
     @media (600px < width <= 767px) {
+        position:relative;
         width:100%;
         margin-left:0px;
         transform:scale(0.8);
+        bottom:30px;
 }  
     @media (width <= 600px) {
         width:100%;
@@ -43,6 +47,7 @@ export const Details = styled.section`
     }
     img:hover{
         cursor: pointer;
+        transform:scale(1.1);
     }
     p{
         font-size:1.5em;

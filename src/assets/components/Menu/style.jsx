@@ -6,5 +6,5 @@ export const Menu = styled.div`
     font-weight: 300;
     height:100px;
     bottom:24px;
-    
+   
 `;
