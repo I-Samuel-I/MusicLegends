@@ -5,7 +5,7 @@
 ## Desafio [16] Codelândia - Iuri Silva
 >Veja o design: https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab
 
-<img width="800px" src="./src/assets/img/MusicLegends-PrintHome.jpeg">
+<img width="800px" src="./src/assets/images/MusicLegends-PrintHome.jpeg">
 
 _Tecnologias:_
 
