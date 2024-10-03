@@ -33,6 +33,9 @@ export const Favorite = styled.div`
     @media (767px < width <= 991px) {
         padding-left:10px;
     }
+    @media (600px < width <= 767px) {
+        padding-left:10px;
+}
 
     @media (width <= 600px) {
         display:none;
@@ -102,6 +105,14 @@ export const Play = styled.div `
         width:25px;
         margin-left:0px;
     }
+
+    @media (600px < width <= 767px) {
+        width: 45px;
+        height:40px;
+        img{
+            width:25px;
+        }
+}
     @media (width <= 600px) {
         img{
             width:30px;
@@ -120,6 +131,9 @@ export const Extra = styled.div `
     @media (767px < width <= 991px) {
         padding-left:100px;
     }
+    @media (600px < width <= 767px) {
+        padding-left:10px;
+}
     @media (width <= 600px) {
         display:none;
     }

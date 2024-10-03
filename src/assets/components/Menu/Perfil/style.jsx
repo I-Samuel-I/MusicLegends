@@ -5,6 +5,7 @@ export const Avatar = styled.div `
     position:relative;
     height:100px;
     bottom:200px;
+    
     width:20%;
     margin-left:auto;
 
@@ -27,6 +28,7 @@ export const Avatar = styled.div `
         border-radius:100px;
         width:48px;
         height:48px;
+        
     }
     img:hover{
         transform:scale(1.2);
@@ -34,16 +36,22 @@ export const Avatar = styled.div `
     }
 
     @media (767px < width <= 991px) {
+        bottom: 100%;
+        left:10%;
         p{
-            
+            display:none;
         }
 }
     @media (600px < width <= 767px) {
+        bottom: 100%;
+        left:10%;
         p{
             display:none;
         }
 }
     @media (width <= 600px) {
+        bottom: 100%;
+        left:10%;
         p{
             display:none;
         }
