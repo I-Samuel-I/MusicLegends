@@ -19,7 +19,7 @@ export default function Footer(){
         setTooltip((prev)=>({...prev,[tooltipKey]: false}));
     }
    
-    
+    //Evento para mudança de imagem (coração)
     const FilledHeart = () => {
         return( 
             <img src ={Icons.Favorite} alt="Favorite-Img" onClick={toggleFavorite}/> 

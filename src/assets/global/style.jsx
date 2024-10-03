@@ -17,11 +17,8 @@ export const GlobalStyle = createGlobalStyle`
         overflow-y:hidden;
         overflow-x:hidden;
         background-color: #c74848;
-
+        
     }
-    
-    
-   
     
     @media (width <= 600px) {
          
@@ -63,6 +60,5 @@ export const GlobalStyle = createGlobalStyle`
             body,html{
                 background-size:cover;
             }
-
 }
 `;

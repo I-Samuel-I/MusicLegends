@@ -30,10 +30,7 @@ export const Avatar = styled.div `
         height:48px;
         
     }
-    img:hover{
-        transform:scale(1.2);
-        transition: 0.5s;
-    }
+    
 
     @media (767px < width <= 991px) {
         bottom: 100%;
@@ -63,4 +60,26 @@ export const Avatar = styled.div `
             
         }
 }
+`;
+
+export const GlobalToolTip = styled.div `
+    position: relative;
+    display: flex;
+    
+    img:hover{
+        transform:scale(1.1);
+        cursor: pointer;
+    }
+`;
+export const ToolTip = styled.div`
+    position: absolute;
+    top: 65px;
+    left:50%;
+    transform: translateX(-45%);
+    background-color: #2e2d2d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
 `;

@@ -123,7 +123,7 @@ export const Play = styled.div `
 export const Extra = styled.div ` 
     display:flex;
     width:60%;
-    padding-left:175px;
+    padding-left:160px;
     img{
        margin-left:45px;
     }
@@ -150,6 +150,7 @@ export const GlobalToolTip = styled.div`
     }
     
 `;
+
 export const ToolTip = styled.div`
     position: absolute;
     bottom: 50px;
@@ -161,10 +162,8 @@ export const ToolTip = styled.div`
     border-radius: 5px;
     font-size: 0.9em;
     white-space: nowrap;
-    
-    
-   
 `;
+
 export const PrevWrapper = styled.div `
     position: relative;
     display: flex;
