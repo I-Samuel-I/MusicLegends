@@ -8,20 +8,19 @@ export default function Perfil() {
   });
 
   const MouseEnter = (tooltipKey) => {
-    setTooltip((prev) => ({ ...prev, [tooltipKey]: true }));
+    setTooltip((perfil) => ({ ...perfil, [tooltipKey]: true }));
   };
 
   const MouseLeave = (tooltipKey) => {
-    setTooltip((prev) => ({ ...prev, [tooltipKey]: false }));
+    setTooltip((perfil) => ({ ...perfil, [tooltipKey]: false }));
   };
 
   return (
     <>
       <S.Avatar>
         <p> Samuel Gomes</p>
-
         <S.GlobalToolTip>
-          {tooltip.perfil && <S.ToolTip>Samuel Gomes</S.ToolTip>} {/* Corrigido */}
+          {tooltip.perfil && <S.ToolTip>Samuel Gomes</S.ToolTip>} 
           <img
             src={Icons.Perfil}
             alt="Perfil_IMG"

@@ -9,9 +9,9 @@ export const Options = styled.footer`
     height:80px;
     background-color: #131313;     
     color:white;
+    
     img{
-        width:35px; 
-        
+        width:35px;   
     }
     
     @media (width <= 600px) {
@@ -100,17 +100,21 @@ export const Play = styled.div `
     &:hover{
         transform: scale(1.1);
     }
-
     img{
         width:25px;
         margin-left:0px;
+    }
+
+    @media (width <= 991px) {
+        width: 40px;
+        height:40px;
     }
 
     @media (600px < width <= 767px) {
         width: 45px;
         height:40px;
         img{
-            width:25px;
+            width:23px;
         }
 }
     @media (width <= 600px) {

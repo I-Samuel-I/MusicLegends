@@ -9,7 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     body,html{
         font-family: "Lexend", sans-serif;
         width:100%;
-        background-image: url(${BgImage});
+        background-image:  /* linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%)*/
+        url(${BgImage});
         background-size: cover; 
         background-position: center 30px;
         background-repeat: no-repeat;
@@ -17,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
         overflow-y:hidden;
         overflow-x:hidden;
         background-color: #c74848;
-        
     }
     
     @media (width <= 600px) {
@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
        
     @media (600px < width <= 767px) {
              
-    body,html{
+        body,html{
                 background-repeat: no-repeat;
                 background-size:1400px;
                 

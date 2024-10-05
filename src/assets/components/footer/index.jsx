@@ -44,7 +44,6 @@ export default function Footer(){
                     <h4>Warriors</h4>
                     <p>Imagine Dragons</p>  
                 </S.Text>
-               
                 <S.Controls>
                     <S.GlobalToolTip>
                     {tooltip.aleatory && <S.ToolTip>Ativar Ordem Aleatória</S.ToolTip>}
@@ -69,7 +68,6 @@ export default function Footer(){
                                 onMouseEnter={()=> MouseEnter("play")}
                                 onMouseLeave={()=> MouseLeave("play")}
                              />
-                             
                         </S.GlobalToolTip>
                     </S.Play>
                     <S.GlobalToolTip>
@@ -86,24 +84,17 @@ export default function Footer(){
                             onMouseLeave={()=> MouseLeave("repeat")}
                         />
                     </S.GlobalToolTip>
-                    
-                    
                     <S.Extra>
                         <img src={Icons.Volume} alt="Volume-Img"/>
-                        
                         <S.GlobalToolTip>
                             {tooltip.expand && <S.ToolTip>Expandir</S.ToolTip>}
                             <img src={Icons.Expanded} alt="Expanded-Img"
                                 onMouseEnter={()=> MouseEnter("expand")}
                                 onMouseLeave={()=> MouseLeave("expand")}
                             />
-                        </S.GlobalToolTip>
-                         
+                        </S.GlobalToolTip> 
                     </S.Extra>
-                   
-                </S.Controls>
-                
-                
+                </S.Controls>  
             </S.Options>
         </>
     )

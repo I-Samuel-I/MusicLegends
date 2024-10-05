@@ -5,10 +5,8 @@ export const Avatar = styled.div `
     position:relative;
     height:100px;
     bottom:200px;
-    
     width:20%;
     margin-left:auto;
-
     p{
         font-family: "DM Sans", sans-serif;
         font-weight: 400;
@@ -31,7 +29,6 @@ export const Avatar = styled.div `
         
     }
     
-
     @media (767px < width <= 991px) {
         bottom: 100%;
         left:10%;
@@ -48,7 +45,7 @@ export const Avatar = styled.div `
 }
     @media (width <= 600px) {
         bottom: 100%;
-        left:10%;
+        left:5%;
         p{
             display:none;
         }
@@ -56,8 +53,7 @@ export const Avatar = styled.div `
             position:relative;
             left:20px;
             width:40px;
-            height:40px;
-            
+            height:40px;  
         }
 }
 `;

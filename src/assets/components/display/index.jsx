@@ -4,7 +4,7 @@ import { useState } from "react"
 export default function Display (){
     const [music, setMusic] = useState(1);
     const totalMusic = 20;
-    
+
     const nextMusic = () => {
         if (music < totalMusic){
             setMusic(nextMusic => nextMusic + 1)
@@ -17,7 +17,6 @@ export default function Display (){
     }
     return (
         <>
-            
                 <S.Display>
                     <S.Logo>
                         <img src={Icons.Logo} alt="Logo-Image"/>
@@ -28,13 +27,9 @@ export default function Display (){
                         <p>{music}/{totalMusic}</p>
                         <S.ImageInverse>
                             <img src={Icons.Prev1} alt="Next-Image" onClick={nextMusic}/>
-                        </S.ImageInverse>
-                       
+                        </S.ImageInverse>  
                     </S.Details>
                 </S.Display>
-               
-                
-           
         </> 
     )
 }

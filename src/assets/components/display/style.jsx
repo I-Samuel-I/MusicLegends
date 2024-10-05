@@ -8,12 +8,14 @@ export const Display = styled.article`
 
     @media (767px < width <= 991px) {
     position:relative;
-    width:100%;
-    margin-left:-40px;
+    width:50%;
+    margin-left:0px;
     transform:scale(0.8);
     bottom:50px;
+    border: solid 1px;
 
 }
+    
     @media (600px < width <= 767px) {
         position:relative;
         width:100%;
@@ -22,10 +24,17 @@ export const Display = styled.article`
         bottom:30px;
 }  
     @media (width <= 600px) {
-        width:100%;
+        position:relative;
+        width:50%;
         margin-left:0px;
+        bottom:30px;
         transform:scale(0.8);
 }
+    @media (width <= 320px){
+        position:relative;
+        transform:scale(0.7);
+        right:15px;
+      }
 `;
 export const Logo = styled.div`
     img{
