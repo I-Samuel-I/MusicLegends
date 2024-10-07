@@ -20,7 +20,7 @@ _Tecnologias:_
 - code . (caso use o VSCode)
 - npm start / yarn start
 
-## 💻 Página oline: Indisponível
+## 💻 Página oline: https://musiclegends.bohr.io
 
 ## 🌐 Contate-me:
 

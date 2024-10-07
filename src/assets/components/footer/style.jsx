@@ -58,7 +58,7 @@ export const Controls = styled.div`
             margin-left:25px;
         }
     }
-   
+    
 `;
 
 export const Text = styled.div`
@@ -86,7 +86,7 @@ export const Text = styled.div`
 export const Prev = styled.div `
     transform: scale(-1);
     display:flex;
-    margin-left:10px;
+    margin-right:5px;
 `;
 
 export const Play = styled.div `
@@ -98,7 +98,7 @@ export const Play = styled.div `
     background-color: #191919;
     border: solid 1px #1E1E1E; 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.09);
     }
     img{
         width:25px;
@@ -143,29 +143,39 @@ export const Extra = styled.div `
     }
 `;
 
-
 export const GlobalToolTip = styled.div` 
-    position: relative;
-    display: flex;
+    @media (width >= 992px){
+        position: relative;
+        display: flex;
     
-    img:hover{
-        transform:scale(1.1);
-        cursor: pointer;
+        img:hover{
+            transform:scale(1.09);
+            cursor: pointer;
+        } 
+    @media (width <= 991px){
+        display:none;
     }
-    
+}
+   
 `;
 
 export const ToolTip = styled.div`
-    position: absolute;
-    bottom: 50px;
-    left:50%;
-    transform: translateX(-45%);
-    background-color: #2e2d2d;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    white-space: nowrap;
+    @media (width >= 992px){
+        position: absolute;
+        bottom: 50px;
+        left:50%;
+        transform: translateX(-45%);
+        background-color: #2e2d2d;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+   
+    @media (width <= 991px){
+        display:none;
+    }
 `;
 
 export const PrevWrapper = styled.div `
@@ -176,7 +186,7 @@ export const PrevWrapper = styled.div `
         transform: scale(-1);
     }
     img:hover{
-        transform:scale(1.1)
+        transform:scale(-1.1)
         
     }
 `;
