@@ -59,23 +59,35 @@ export const Avatar = styled.div `
 `;
 
 export const GlobalToolTip = styled.div `
-    position: relative;
-    display: flex;
+    @media (width >= 992px){
+        position: relative;
+        display: flex;
     
-    img:hover{
-        transform:scale(1.1);
-        cursor: pointer;
+        img:hover{
+            transform:scale(1.1);
+            cursor: pointer;
     }
+    @media (width <= 991px){
+        display:none;
+    }
+}
+   
 `;
 export const ToolTip = styled.div`
-    position: absolute;
-    top: 65px;
-    left:50%;
-    transform: translateX(-45%);
-    background-color: #2e2d2d;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    white-space: nowrap;
+    @media (width >= 992px){
+        position: absolute;
+        top: 65px;
+        left:50%;
+        transform: translateX(-45%);
+        background-color: #2e2d2d;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+    @media (width <= 991px){
+        display:none;
+    }
+    
 `;

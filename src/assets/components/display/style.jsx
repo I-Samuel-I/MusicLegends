@@ -12,8 +12,6 @@ export const Display = styled.article`
     margin-left:0px;
     transform:scale(0.8);
     bottom:50px;
-    border: solid 1px;
-
 }
     
     @media (600px < width <= 767px) {

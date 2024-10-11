@@ -1,4 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+
+const fillBar = keyframes`
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+`;
+
+const moveBall = keyframes`
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+`;
 
 export const Options = styled.footer`
     display:flex;
@@ -53,12 +72,10 @@ export const Controls = styled.div`
     @media (width <= 600px) {
         display:flex;
         justify-content:center;
-        border:solid 1px;
         img{
             margin-left:25px;
         }
     }
-    
 `;
 
 export const Text = styled.div`
@@ -106,8 +123,11 @@ export const Play = styled.div `
     }
 
     @media (width <= 991px) {
+        display:flex;
+        align-items:center;
         width: 40px;
         height:40px;
+       
     }
 
     @media (600px < width <= 767px) {
@@ -189,4 +209,31 @@ export const PrevWrapper = styled.div `
         transform:scale(-1.1)
         
     }
+`;
+
+export const ProgressBar = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #a7a7a7;
+`;
+
+export const ProgressFill = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #eb4848;
+    animation: ${fillBar} 100s linear;
+`;
+
+export const ProgressBall = styled.div`
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #eb4848;
+    border-radius: 50%;
+    animation: ${moveBall} 100s linear;
 `;

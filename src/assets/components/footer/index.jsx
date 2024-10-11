@@ -37,6 +37,10 @@ export default function Footer(){
     return(
         <>
             <S.Options>
+                <S.ProgressBar>
+                    <S.ProgressFill/>
+                    <S.ProgressBall/>
+                </S.ProgressBar> 
                 <S.Favorite>
                     {favorite ? <FilledHeart/> : <OutLineHeart/>}
                 </S.Favorite>
@@ -94,7 +98,8 @@ export default function Footer(){
                             />
                         </S.GlobalToolTip> 
                     </S.Extra>
-                </S.Controls>  
+                </S.Controls> 
+               
             </S.Options>
         </>
     )

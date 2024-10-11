@@ -22,7 +22,7 @@ export const MenuWrapper = styled.div`
 
     @media (width < 600px){
         transform: scale(0.8);
-        right:75px;
+        right:70px;
       }
 
     div {
