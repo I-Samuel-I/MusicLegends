@@ -22,6 +22,10 @@ export const MenuWrapper = styled.div`
 
     @media (width < 600px){
         transform: scale(0.8);
+        right:100px;
+      }
+      @media (width < 426px){
+        transform: scale(0.8);
         right:70px;
       }
 

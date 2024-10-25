@@ -224,7 +224,8 @@ export const ProgressFill = styled.div`
     left: 0;
     height: 100%;
     background-color: #eb4848;
-    animation: ${fillBar} 100s linear;
+    animation: ${fillBar} 120s linear infinite;
+    animation-play-state: ${({ playing }) => (playing ? "running" : "paused")};
 `;
 
 export const ProgressBall = styled.div`
@@ -235,5 +236,6 @@ export const ProgressBall = styled.div`
     height: 15px;
     background-color: #eb4848;
     border-radius: 50%;
-    animation: ${moveBall} 100s linear;
+    animation: ${moveBall} 120s linear infinite;
+    animation-play-state: ${({ playing }) => (playing ? "running" : "paused")};
 `;
