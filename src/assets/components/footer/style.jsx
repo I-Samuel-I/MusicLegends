@@ -118,6 +118,7 @@ export const Play = styled.div `
         transform: scale(1.09);
     }
     img{
+        display:flex;
         width:25px;
         margin-left:0px;
     }
@@ -134,12 +135,15 @@ export const Play = styled.div `
         width: 45px;
         height:40px;
         img{
+            display:flex;
             width:23px;
         }
 }
     @media (width <= 600px) {
         img{
+            display:flex;
             width:30px;
+            
         }
     }
 `;
