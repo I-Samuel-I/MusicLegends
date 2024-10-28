@@ -127,8 +127,7 @@ export const Play = styled.div `
         display:flex;
         align-items:center;
         width: 40px;
-        height:40px;
-       
+        height:40px;   
     }
 
     @media (600px < width <= 767px) {
@@ -142,8 +141,7 @@ export const Play = styled.div `
     @media (width <= 600px) {
         img{
             display:flex;
-            width:30px;
-            
+            width:30px; 
         }
     }
 `;
@@ -171,11 +169,15 @@ export const GlobalToolTip = styled.div`
     @media (width >= 992px){
         position: relative;
         display: flex;
-    
-        img:hover{
-            transform:scale(1.09);
-            cursor: pointer;
-        } 
+        
+        img {
+            
+            &:hover {
+                transform: scale(1.09);
+                cursor: pointer;
+               
+            }
+        }
     @media (width <= 991px){
         display:none;
     }
@@ -184,6 +186,7 @@ export const GlobalToolTip = styled.div`
 `;
 
 export const ToolTip = styled.div`
+  
     @media (width >= 992px){
         position: absolute;
         bottom: 50px;
@@ -195,6 +198,7 @@ export const ToolTip = styled.div`
         border-radius: 5px;
         font-size: 0.9em;
         white-space: nowrap;
+      
     }
    
     @media (width <= 991px){
@@ -209,9 +213,10 @@ export const PrevWrapper = styled.div `
     img{
         transform: scale(-1);
     }
+  
     img:hover{
-        transform:scale(-1.1)
-        
+        transform:scale(-1.1);
+        cursor: pointer;
     }
 `;
 
@@ -227,7 +232,7 @@ export const ProgressFill = styled.div`
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #eb4848;
+    background-color: #ffffff;
     animation: ${fillBar} 120s linear infinite;
     animation-play-state: ${({ playing }) => (playing ? "running" : "paused")};
 `;
@@ -238,7 +243,8 @@ export const ProgressBall = styled.div`
     left: 0;
     width: 15px;
     height: 15px;
-    background-color: #eb4848;
+    background-color: #eb4848f8;
+    box-shadow: 1px 1px 3px 3px #eb48485e;
     border-radius: 50%;
     animation: ${moveBall} 120s linear infinite;
     animation-play-state: ${({ playing }) => (playing ? "running" : "paused")};

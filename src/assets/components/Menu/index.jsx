@@ -10,8 +10,7 @@ export default function Menu (){
                 <Title/>
                 <Nav/>
                 <NavBar/>
-                <Perfil/>
-                
+                <Perfil/> 
             </S.Menu>
         </>
     )

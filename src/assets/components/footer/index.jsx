@@ -31,7 +31,7 @@ export default function Footer() {
     };
     const OutLineHeart = () => {
         return (
-            <img src={Icons.OutLineHeart} alt="Favorite-Img" onClick={toggleFavorite} />
+            <img  style={{ width: "25px" }} src={Icons.OutLineHeart} alt="Favorite-Img" onClick={toggleFavorite} />
         );
     };
     const toggleFavorite = () => {

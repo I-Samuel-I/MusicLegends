@@ -49,7 +49,6 @@ export const MenuWrapper = styled.div`
       }
     }
   }
-
 `;
 
 export const NavWrapper = styled.div`

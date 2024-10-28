@@ -10,9 +10,8 @@ import Logo from "../../images/logo.svg"
 import Play from "../../images/Play.svg"
 import Aleatory from "../../images/button-aleatory.svg"
 import Pause from "../../images/Pause.png"
-import OutLineHeart2 from "../../images/HeartOutline2.png"
-import OutLineHeart from "../../images/love.png"
+import OutLineHeart from "../../images/love.svg"
 export{
     Perfil, Expanded, Favorite, Next, Prev1, Prev, Repeat, Volume, Logo, Play, Aleatory, Pause, 
-    OutLineHeart2,OutLineHeart
+    OutLineHeart
 }
