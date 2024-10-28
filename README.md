@@ -1,4 +1,4 @@
-# MusicLegends
+# Music Legends
 
 > Status : Em andamento ⌛
 
