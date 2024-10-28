@@ -1,4 +1,4 @@
-# LogMine
+# MusicLegends
 
 > Status : Em andamento ⌛
 
