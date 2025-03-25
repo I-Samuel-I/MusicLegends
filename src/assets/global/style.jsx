@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import  BgImage   from "../images/Walpaper.png";
+import BgImage from "../images/Walpaper.png";
 export const GlobalStyle = createGlobalStyle`
     *{
         margin:0px;
@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     body,html{
         font-family: "Lexend", sans-serif;
         width:100%;
+        
         background-image:  linear-gradient(to top, #131313 10%, rgba(0, 0, 0, 0) 45%) ,
         linear-gradient(to bottom, #131313 0%, rgba(0, 0, 0, 0) 20%),
         linear-gradient(rgba(77, 75, 75, 0.137), rgba(77, 75, 75, 0.137)),
@@ -38,24 +39,20 @@ export const GlobalStyle = createGlobalStyle`
              
         body,html{
                 background-repeat: no-repeat;
-                background-size:1400px;
                 background-image:  linear-gradient(to top, #131313 10%, rgba(0, 0, 0, 0) 45%) ,
                 linear-gradient(to bottom, #131313 0%, rgba(0, 0, 0, 0) 20%),
                 linear-gradient(rgba(77, 75, 75, 0.137), rgba(77, 75, 75, 0.137)),
                 url(${BgImage});
             }  
     }  
-   
     @media (767px < width <= 991px) {
         
         body,html{
             background-repeat: no-repeat;
-            background-size:1400px;
             background-image:  linear-gradient(to top, #131313 10%, rgba(0, 0, 0, 0) 45%) ,
             linear-gradient(to bottom, #131313 0%, rgba(0, 0, 0, 0) 20%),
             linear-gradient(rgba(77, 75, 75, 0.137), rgba(77, 75, 75, 0.137)),
             url(${BgImage});
-            
         }  
     } 
         
@@ -64,8 +61,6 @@ export const GlobalStyle = createGlobalStyle`
         body,html{
             background-position: center 50px;
             background-repeat: no-repeat;
-            background-size:1300px;
-            
         }    
 }
         @media (width >= 1200px) {
