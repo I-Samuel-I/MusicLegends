@@ -7,7 +7,6 @@ export const Display = styled.article`
     position: relative;
     width: 50%;
     margin-left: 5%;
-    
     bottom: 50px;
   }
 
@@ -34,9 +33,9 @@ export const Display = styled.article`
 export const Logo = styled.div`
   img {
     margin-top: 25%;
-    
-    @media ( width <= 999px){
-        margin-top: 100%;
+
+    @media (width <= 999px) {
+      margin-top: 50%;
     }
     @media (max-height: 999px) and (max-width: 599px) {
       margin-top: 400px;
@@ -47,7 +46,7 @@ export const Logo = styled.div`
     @media (max-height: 599px) and (max-width: 599px) {
       margin-top: 50%;
     }
-    @media (max-height: 699px) and (min-width: 600px)  {
+    @media (max-height: 699px) and (min-width: 600px) {
       margin-top: 20%;
     }
     p {
