@@ -1,6 +1,6 @@
 # Music Legends
 
-> Status : Em andamento ✅
+> Status : Finalizado ✅
 
 ## Desafio [16] Codelândia - Iuri Silva
 >Veja o design: https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab
